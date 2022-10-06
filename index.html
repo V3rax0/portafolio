@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <nav id="header">
+        <ul>
+            <li><a href="#acerca">Acerca</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#educacion">Educacion</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="banner">
+            <img src="img/fotoPerfil.jpg" alt="mi foto de perfil" width="150px">
+            <h1>Ingeniero Juan Delgado</h1>
+            <a href="/Profile.pdf" target="_blank">Descargar HV</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="acerca">
+            <h2>Acerca de...</h2>
+            <p>Perfil profesional Ingeniero de sistemas. Con interes en desarrollo back-end con tecnologia Spring Boot.
+                Me apasiona mucho el mundo de la tecnología, me gusta trabajar con personas proactivas. Me adapto
+                fácilmente a los cambios, cuando inicio proyecto o me integro en uno me comprometo fielmente.
+            </p>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <hr>
+            <p>Universidad de Córdoba (Co) - Creación de un proyecto Ecommerce para la materia de Bases de Datos II</p>
+            <hr>
+            <p>Mundo Electrico SG - Cajero</p>
+            <hr>
+        </section>
+
+        <section id="educacion">
+            <h2>Educacion</h2>
+
+
+            <div class="instituto">I.E La Esperanza - Primaria y Secundaria</div>
+
+            <div class="instituto">Universidad de Córdoba - Ingeniería de Sistemas</div>
+
+            <div class="instituto">Oracle Next Education - Web Developer JR</div>
+
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="container">
+                <div class="skills java">Java</div>
+            </div>
+            <div class="container">
+                <div class="skills html">HTML5</div>
+            </div>
+            <div class="container">
+                <div class="skills js">JavaScript</div>
+            </div>
+            <div class="container">
+                <div class="skills sql">SQL</div>
+            </div>
+            <div class="container">
+                <div class="skills css">CSS3</div>
+            </div>
+            <div class="container">
+                <div class="skills git">GIT</div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contactame</h2>
+
+            <form method="post">
+
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="">
+
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="">
+
+                <label for="msg">Mensaje</label>
+                <textarea id="msg" name="" cols="70" rows="7"></textarea>
+
+                <input class="enviar" type="submit" value="Enviar" onclick="sendEmail()">
+            </form>
+        </section>
+
+    </main>
+
+    <div class="irArriba">
+        <a href="#header"><img src="img/flecha-hacia-arriba.png" alt="Ir arriba" width="40px">
+    </div></a>
+
+    <footer>
+        <p>Ing Juan Delgado</p>
+        <a href="mailto:juanddelgadoguerra@gmail.com">juanddelgadoguerra@gmail.com</a>
+        <p>Sahagún Córdoba - Col</p>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/mail.js"></script>
+</body>
+</html>
